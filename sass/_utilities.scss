@@ -13,3 +13,13 @@
 @function em($target, $context: $base__font-size) {
 	@return ($target / $context) * 1em;
 }
+
+// Mixins
+
+@mixin bg-color($map) {
+	@each $theme, $color in $map {
+		&--#{$theme} {
+			background-color: $color;
+		}
+	}
+}
