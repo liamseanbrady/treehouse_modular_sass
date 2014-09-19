@@ -14,6 +14,12 @@
 	@return ($target / $context) * 1em;
 }
 
+// Call the color palette modifiers
+
+@function palette($palette, $shade: 'base') {
+	@return map-get(map-get($palettes, $palette), $shade);
+}
+
 // Mixins
 
 @mixin bg-color($map) {
