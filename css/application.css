@@ -471,6 +471,21 @@ button {
   [class^="btn--"]:active {
     opacity: initial; }
 
+.nav__item, .nav__item--current {
+  display: inline-block;
+  margin-bottom: 0 0.75em; }
+
+.nav__item a, .nav__item--current a {
+  font-size: 1.125em;
+  font-weight: 300;
+  display: block;
+  padding: 0.44444em;
+  border-bottom: 1px solid transparent; }
+
+.nav__item a:hover, .nav__item--current a {
+  color: #0b0b0b;
+  border-color: #52bab3; }
+
 /* =========================================== */
 /*   Main
 /* =========================================== */
@@ -516,5 +531,14 @@ button {
   width: auto;
   display: inline-block;
   margin-right: 1.07143em; }
+
+/* =========================================== */
+/*   Nav
+/* =========================================== */
+.nav {
+  margin-top: 1.25em;
+  margin-bottom: 1.875em; }
+  .nav__item a {
+    color: #797e83; }
 
 /*# sourceMappingURL=application.css.map */
